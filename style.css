@@ -34,11 +34,18 @@ html,body{
 #nav a {
     color: #ffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-#heading h1{
+#heading{
     margin-left: 30px;
+}
+
+#main-title{
+    margin-left: 1%;
+}
+
+#main-title, #secondh1{
     opacity: .6;
     line-height: 1;
     font-size: 10vw;
@@ -47,15 +54,13 @@ html,body{
     font-family: "General Sans Medium";
 }
 
-#heading #secondh1{
-    margin-left: 200px;
-}
-
 .blocktext{
-    width: fit-content;
+    display: inline-block;
+    width: auto;
+    margin-left: 6.5%;
 }
 
-.blocktext h5{
+#basedon{
     text-align: right;
     text-transform: uppercase;
     font-size: 15px;
@@ -72,4 +77,47 @@ html,body{
     font-size: .8vw;
     text-align: right;
     letter-spacing: 1.5px;
+}
+
+
+#herofooter{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+#herofooter a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    gap: 5px;
+}
+
+#iconset{
+    display: flex;
+    gap: 6px;
+}
+
+.circle{
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Decorative eleement */
+#hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: radial-gradient(circle at 10% 30%, rgba(255, 255, 255, 0.05) 1%, transparent 50%),
+    radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.07) 10%, transparent 30%)
 }
