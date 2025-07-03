@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -37,8 +38,12 @@ html,body{
     font-size: 20px;
 }
 
+
+/* Hero section */
+
 #heading{
     margin-left: 30px;
+    margin-top: 3%;
 }
 
 #main-title{
@@ -67,7 +72,7 @@ html,body{
 }
 
 #smallHeading {
-    margin-top: 180px;
+    margin-top: 8%;
     padding-right: 50px;
 }
 
@@ -110,7 +115,7 @@ html,body{
     text-align: center;
 }
 
-/* Decorative eleement */
+/* Decorative element in hero section*/
 #hero::before{
     content: "";
     position: absolute;
@@ -118,6 +123,138 @@ html,body{
     bottom: 0;
     right: 0;
     left: 0;
-    background: radial-gradient(circle at 10% 30%, rgba(255, 255, 255, 0.05) 1%, transparent 50%),
-    radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.07) 10%, transparent 30%)
+    background: radial-gradient(circle at 10% 30%, rgba(255, 255, 255, 0.05) 1%, transparent 40%),
+    radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.07) -20%, transparent 48%)
+}
+
+
+/* Project section  */
+#second{
+    width: 100%;
+    padding: 30px;
+    padding-top: 120px;
+    padding-right: 10%;
+}
+
+.elem{
+    width:100%;
+    border-top: 1px solid #7f7c7c;
+    padding: 0 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.elem h1{
+    text-transform: uppercase;
+    font-size: 6.7vw;
+    opacity: 0.6;
+    padding: 63.5px 0px;
+    letter-spacing: 3.8px;
+}
+.elem h6{
+    font-size: 100%;
+}
+.elemlast{
+    border-bottom: 1px solid #7f7c7c;
+}
+
+.elem img{
+    position: absolute;
+    width: 30%;
+    border-radius: 30px;
+    display: none;
+}
+
+
+/* intro section  */
+
+#about{
+    display: flex;
+    align-items: center;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    gap: 50px;
+    width: 100%;
+}
+
+#imageabout{
+    width: 200px;
+    border-radius: 50%;
+}
+
+#textabout{
+    width: 25rem;
+}
+
+#textabout h4{
+    text-transform: uppercase;
+    color: gray;
+    font-size: 17px;
+    margin-bottom: 10px ;
+}
+
+#intro{
+    font-size: 15px;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.letstalk{
+    text-decoration: none;
+    color: white;
+    border: 1.5px solid white;
+    padding: 12px 22px;
+    border-radius: 30px;
+}
+
+
+/* subscribe section  */
+#subscribe{
+    color: #ffff;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+
+}
+
+#subcribe h5{
+    text-transform: uppercase;
+    opacity: .6;    
+}
+
+#subcribe h5{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* footer section  */
+#footer {
+    color: #fff;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+#footerleft {
+    display: flex;
+    gap: 20px;
+}
+
+#footerright {
+    display: flex;
+    gap: 30px;
+}
+
+#footer a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
 }
